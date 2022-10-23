@@ -6,7 +6,7 @@
 const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 const grades1 = [5,2,9,9,8,7,5];
 
-function gradesabove(arr){
+function gradesAbove(arr){
     let counter = 0;
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] >= 8 ) {
@@ -15,9 +15,9 @@ function gradesabove(arr){
         return counter;
 }
 
-const outcome = gradesabove(grades);
-const outcome1= gradesabove(grades1)
-console.log(outcome,outcome1);
+console.log(gradesAbove(grades));
+console.log(gradesAbove(grades1));
+
 
 
 /*  1b: Omschrijven tot een herbruikbare functie   */
@@ -57,7 +57,7 @@ console.log(getAverage(grades1));
 // * Hoe kan ik iedere waarde van de array langsgaan?
 // * Op welke conditie moet ik checken?
 // * Hoe zorgt ik ervoor dat wanneer ik een cijfer tegenkom die aan de conditie voldoet, ik dit ergens kan opslaan?
-// Log het antwoord in de terminal.
+//Log het antwoord in de terminal.
 function highestGrade(arr) {
     let highest = 0;
     for (let i = 0; i < arr.length; i++) {
