@@ -9,7 +9,7 @@
 // getEmailDomain("t.mellink@novi.nl") geeft novi.nl
 // getEmailDomain("a.wiersma@outlook.com") geeft outlook.com
 
-//de korte variant
+
 function getEmailDomainShort(email){
     let domain = email.split("@");
     return domain[1];

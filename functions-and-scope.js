@@ -33,10 +33,12 @@ console.log(gradesAbove(grades1));
 
 function getAverage(arr){
 let sum = 0;
+let average;
     for (let i = 0; i < arr.length; i++) {
         sum = sum + arr[i];
     }
-    return sum /arr.length
+    average = sum /arr.length
+    return average.toFixed(2);
 }
 
 console.log(getAverage(grades));
